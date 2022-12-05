@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string[] text = { "Hello", "world", "2", ":-)", "12", "computer science" }; 
+var result = text.Where(input => input.Length <= 3).ToArray(); 
+Console.WriteLine(string.Join(", ", result)); 
+Console.ReadLine();
